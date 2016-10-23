@@ -1,0 +1,1 @@
+stubby takes endpoint descriptors in the form of a YAML or JSON file that tell it how to respond to incoming requests. For each incoming request, configured endpoints are checked in-order until a match is found.
