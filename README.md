@@ -7,8 +7,8 @@ This is a fully customizable standalone UI for Mesos which Propagates metadata f
 
 Mesos cedes much of its scheduling authority over to the frameworks (in DC/OS, we call them “services”) that are running on it. This means that all of the services running on DC/OS can have their own scheduler and that each scheduler can be specifically optimized for unique kinds of workloads and constraints. Furthermore, these schedulers are customized to simplify “Day 2” operations by making services easy to install, scale and upgrade without downtime, among other benefits.
 
-The overall structure of 'Orbifold-UI' is dependent on the recent breakthroughs at Facebook React: We exploit this state-of-the-art 'stateful component' element 
-which forces developers to compartmentalize, automate, and template using promises; masking or hashing functions which work efficiently on the DOM.
+Running multiple schedulers on the same cluster—simultaneously, multi-tenant on shared nodes is the only way to maximize resource utilization and accommodate the wide range of Container 2.0 workloads. Container 1.0 systems, including Kubernetes and Docker Swarm, use a single monolithic scheduler. And because there is no single scheduler that can optimize for all workloads, users end up with non-optimal operating constraints, including being forced to create separate clusters for each service. The overall structure of 'Orbifold-UI' is dependent on the recent breakthroughs at Facebook React: We exploit this state-of-the-art 'stateful component' element 
+which forces developers to compartmentalize, automate, and template using promises; masking or hashing functions which work efficiently on the DOM. 
 
 This entire project has been written for most modern browsers, thus exposing well-known practices in web-development. Further improvements shall concentrate on cryptographic concerns 
 with data parsing and oversight(priviledges) between accounts. Threats in tokenized security issues dealing with cookies can enable MiTM Attacks and DDoS by spoofing the tubing. Thus said,
