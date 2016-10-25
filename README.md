@@ -1,7 +1,11 @@
 # orbifold
 An orbifold inspired UI for Mesos.
 
-This is a fully customizable standalone UI for Mesos which Propagates metadata from Clusters, allows for Task execution, data persistence between sessions using cluster-store, and stylistic automation via Gulp in a dynamic UI which presents the User with an Alternative interface to Mesosphere.
+Orbifold UI is a DC/OS inspired Marathon-laden Standalone GUI for Container 2.0: Realistically, delivering container services means delivering a platform that can run application logic along with the gamut of backend services on shared infrastructure, combining all workloads onto a single platform that improves efficiency and simplifies complex operations. The collection of capabilities that modern applications require includes monitoring, continuous deployment, relational databases, web servers, virtual networking and more.
+
+This is a fully customizable standalone UI for Mesos which Propagates metadata from Clusters, allows for Task execution, data persistence between sessions with cluster-store, scheduling via Marathon, Dispatching to sockets and stylistic automation via Gulp, comprising a dynamic UI which presents the User with an Alternative interface to Mesosphere.
+
+Mesos cedes much of its scheduling authority over to the frameworks (in DC/OS, we call them “services”) that are running on it. This means that all of the services running on DC/OS can have their own scheduler and that each scheduler can be specifically optimized for unique kinds of workloads and constraints. Furthermore, these schedulers are customized to simplify “Day 2” operations by making services easy to install, scale and upgrade without downtime, among other benefits.
 
 The overall structure of 'Orbifold-UI' is dependent on the recent breakthroughs at Facebook React: We exploit this state-of-the-art 'stateful component' element 
 which forces developers to compartmentalize, automate, and template using promises; masking or hashing functions which work efficiently on the DOM.
