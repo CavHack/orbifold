@@ -7,6 +7,23 @@ This is a fully customizable standalone UI for Mesos which Propagates metadata f
 
 Mesos cedes much of its scheduling authority over to the frameworks (in DC/OS, we call them “services”) that are running on it. This means that all of the services running on DC/OS can have their own scheduler and that each scheduler can be specifically optimized for unique kinds of workloads and constraints. Furthermore, these schedulers are customized to simplify “Day 2” operations by making services easy to install, scale and upgrade without downtime, among other benefits.
 
+Material-UI is available as an npm package.
+
+react-tap-event-plugin
+
+Our components use react-tap-event-plugin to listen for touch / tap / clickevents. This dependency is temporary and will go away once the official React version is released. Until then, be sure to inject this plugin at the start of your app.
+
+import injectTapEventPlugin from 'react-tap-event-plugin';
+
+// Needed for onTouchTap
+// http://stackoverflow.com/a/34015469/988941
+injectTapEventPlugin();
+react-tap-event-plugin provides onTouchTap() to all React Components. It's a mobile-friendly onClick() alternative for components in Material-UI, especially useful for the buttons.
+
+Roboto Font
+
+Material-UI was designed with the Roboto font in mind
+
 Running multiple schedulers on the same cluster—simultaneously, multi-tenant on shared nodes is the only way to maximize resource utilization and accommodate the wide range of Container 2.0 workloads. Container 1.0 systems, including Kubernetes and Docker Swarm, use a single monolithic scheduler. And because there is no single scheduler that can optimize for all workloads, users end up with non-optimal operating constraints, including being forced to create separate clusters for each service. The overall structure of 'Orbifold-UI' is dependent on the recent breakthroughs at Facebook React: We exploit this state-of-the-art 'stateful component' element 
 which forces developers to compartmentalize, automate, and template using promises; masking or hashing functions which work efficiently on the DOM. 
 
