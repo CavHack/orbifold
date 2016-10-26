@@ -1,6 +1,13 @@
 # orbifold
 An orbifold inspired UI for Mesos.
 
+```
+git clone https://github.com/CavHack/orbifold.git 
+cd orbifold
+npm install
+gulp build
+```
+
 Orbifold UI is a DC/OS inspired Marathon-laden Standalone GUI for Container 2.0: Realistically, delivering container services means delivering a platform that can run application logic along with the gamut of backend services on shared infrastructure, combining all workloads onto a single platform that improves efficiency and simplifies complex operations. The collection of capabilities that modern applications require includes monitoring, continuous deployment, relational databases, web servers, virtual networking and more.
 
 This is a fully customizable standalone UI for Mesos which Propagates metadata from Clusters, allows for Task execution, data persistence between sessions with cluster-store, scheduling via Marathon, Dispatching to sockets and stylistic automation via Gulp, comprising a dynamic UI which presents the User with an Alternative interface to Mesosphere.
