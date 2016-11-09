@@ -53,11 +53,12 @@ module.exports = function(app) {
 	let html = template(data);
 	res.send(html);
 	});
-    }
-
-});
+ }
+          
 } catch(err) {
-next(err);}
-});
-}
+next(err);
+  
+    }
+  });
+ }
 };
